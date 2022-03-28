@@ -21,8 +21,10 @@ int main()
     else if (gameStart=="Quit") {
         cout << "You have exited the game.\n";
     }
-    while (gameStart!="Start" || gameStart!="Quit") {
+    else {
         cout << "Invalid input\n";
+    }
+    while (gameStart!="Start" || gameStart!="Quit") {
         cout << "Enter [Start] or [Quit]\n";
         cin >> gameStart;
     }
